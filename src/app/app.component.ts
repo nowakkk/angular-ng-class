@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-class-practise';
+
+  compAClicked: boolean = false;
+  compBClicked: boolean = false;
+
+  clickA() {
+    this.compAClicked = !this.compAClicked;
+  }
+
+  clickB() {
+    this.compBClicked = !this.compBClicked;
+  }
 }
